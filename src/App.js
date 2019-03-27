@@ -4,6 +4,7 @@ import client from './apolloClient';
 import { HashRouter, Route } from 'react-router-dom';
 import Home from './Home';
 import Detail from './Detail';
+import './reset.css';
 
 class App extends Component {
   render() {

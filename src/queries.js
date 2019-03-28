@@ -10,3 +10,15 @@ export const YTSMovies = gql`
     }
   }
 `;
+
+export const YTSMovie = gql`
+  query getYTSMovie($movieId: Int!) {
+    YTSmovie(id: $movieId) {
+      id
+      title
+      rating
+      description_intro
+      medium_cover_image
+    }
+  }
+`;

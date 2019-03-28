@@ -30,13 +30,8 @@ const Home = () => (
           return (
             <Container>
               {YTSmovies.map((movie) => (
-                <Link to={`/detail/${movie.id}`}>
-                  <Poster
-                    key={movie.id}
-                    title={movie.title}
-                    rating={movie.rating}
-                    imageUrl={movie.medium_cover_image}
-                  />
+                <Link to={`/detail/${movie.id}`} key={movie.id}>
+                  <Poster title={movie.title} rating={movie.rating} imageUrl={movie.medium_cover_image} />
                 </Link>
               ))}
             </Container>
